@@ -1,5 +1,5 @@
-# GLC (Genetics-Linguistics Correspondence) 
->a general framework for generating human text/protein sequence and analyzing their properties of evolution. 
+# GLC (Genetics-Linguistics Correspondence)
+>Based on fundamental physical principle, this research can be applied to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and satisfying many statistical hallmarks, e.g., Zipf's law and power-law degree distribution.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -14,29 +14,21 @@
 * [Contact](#contact)
 
 ## General Information
-- 
-
-
-Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-
+- Main spirt - Life and language shared many similar hallmarks, thus they can be analyzed via a general framework.
+- Main Problem - The natural selection of sequence has not been quantified. In the other hands, the generating algorithm and prediction of sequence usually lack the interpretability. 
+- This project provides 
 
 (1) an evolutionary algorithm that can generate text/protein sequence; 
 
 (2) tools that can be used to analyze text/protein sequence
 
-> Live demo [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
+> Evolution Algorithm Demo [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-
+Natural language processing, pattern recognition, denosing
 
 ## Features
 List the ready features here:
