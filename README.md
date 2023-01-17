@@ -14,7 +14,7 @@
 
 ## General Information
 - Main spirt - Life and language shared many similar hallmarks, thus they can be analyzed via a general framework.
-- Main Problem - The natural selection of sequence has not been quantified. In the other hands, the generating algorithm and prediction of sequence usually lack the interpretability. 
+- Main Problem - The natural selection of sequence has not been quantified. In the other hands, the generating algorithm and prediction of sequence usually lack the $\text{\textcolor{red}{interpretability}}$. 
 - This project provides 
 
 (1) an evolutionary algorithm that can generate text/protein sequence; 
@@ -26,7 +26,7 @@
 
 ## Features
 List the ready features here:
-- Only need 4 parameters to generate a sequence that satisfies the statistical properties of human text and protein sequence.
+- Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
 - Awesome feature 2
 - Awesome feature 3
 
