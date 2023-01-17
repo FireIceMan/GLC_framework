@@ -1,6 +1,8 @@
 # GLC (Genetics-Linguistics Correspondence)
 >Based on fundamental physical principle, this research can be applied to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and satisfying many statistical hallmarks of life and language, e.g., Zipf's law and power-law degree distribution.
 
+![framework](./img/Evo_Hierarchy.png)
+
 ## Table of Contents
 * [General Info](#general-information)
 * [Features](#features)
@@ -29,10 +31,9 @@ List the ready features here:
 - Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
 - Simulate mutation and predict the direction of evolution.
 - The evolution and variation is based on fundamental principle that can be explained, not a black-box.
-- Reveal the hidden information of life and language.
+- Reveal the hidden information of life and language by rank-rank analysis.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
