@@ -17,9 +17,9 @@
 - Main Problem - The natural selection of sequence has not been quantified. In the other hands, the generating algorithm and prediction of sequence usually lack the $\text{\textcolor{red}{interpretability}}$. 
 - This project provides 
 
-(1) an evolutionary algorithm that can generate text/protein sequence; 
+(1) An evolutionary algorithm that can generate text/protein sequence; 
 
-(2) tools that can be used to analyze text/protein sequence
+(2) Tools that can be used to analyze text/protein sequence
 
 > Evolution Algorithm Demo [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
 
@@ -27,9 +27,9 @@
 ## Features
 List the ready features here:
 - Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
-- Awesome feature 2
-- Awesome feature 3
-
+- Simulate mutation and predict the direction of evolution.
+- The evolution and variation is based on fundamental principle that can be explained, not a black-box.
+- Reveal the hidden information of life and language.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
