@@ -1,9 +1,8 @@
 # GLC (Genetics-Linguistics Correspondence)
->Based on fundamental physical principle, this research can be applied to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and satisfying many statistical hallmarks, e.g., Zipf's law and power-law degree distribution.
+>Based on fundamental physical principle, this research can be applied to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and satisfying many statistical hallmarks of life and language, e.g., Zipf's law and power-law degree distribution.
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
@@ -24,15 +23,10 @@
 
 > Evolution Algorithm Demo [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-Natural language processing, pattern recognition, denosing
 
 ## Features
 List the ready features here:
-- Awesome feature 1
+- Only need <span style="color:red">4 parameters</span> to generate a sequence that satisfies the statistical properties of human text and protein sequence.
 - Awesome feature 2
 - Awesome feature 3
 
