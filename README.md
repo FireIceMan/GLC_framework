@@ -26,7 +26,7 @@
 
 ## Features
 List the ready features here:
-- Only need <span style="color:red">4 parameters</span> to generate a sequence that satisfies the statistical properties of human text and protein sequence.
+- Only need 4 parameters to generate a sequence that satisfies the statistical properties of human text and protein sequence.
 - Awesome feature 2
 - Awesome feature 3
 
