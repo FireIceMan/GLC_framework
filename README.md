@@ -6,7 +6,6 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
@@ -23,9 +22,6 @@
 
 (2) Tools that can be used to analyze text/protein sequence
 
-> Evolution Algorithm Demo [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
-
-
 ## Features
 List the ready features here:
 - Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
@@ -33,11 +29,17 @@ List the ready features here:
 - The evolution and variation is based on fundamental principle that can be explained, not a black-box.
 - Reveal the hidden information of life and language by rank-rank analysis.
 
-## Screenshots
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
 ## Setup
+### For algorithm of evolution and generating sequence
+You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
+
+### For analysis of human text, protein sequence, and general sequence
+1. Prepare a sequence with segmented units. For human text, please segment its word and syllagram. For protein sequence, please segment its protein and domain.
+
+2.1. prepare
+
+3. 1. prepare
+
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
 Proceed to describe how to install / setup one's local environment / get started with the project.
