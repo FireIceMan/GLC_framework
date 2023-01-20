@@ -34,15 +34,18 @@ List the ready features here:
 You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
 
 ### For analysis of human text, protein sequence, and general sequence
-1. Prepare a sequence with segmented units. 
+1. Prepare the .
+2. 
+3. Segmented a sequence with its units. 
   - For human text, please segment its words and syllagrams. 
   
   (1) For phonogram, e.g. English, use the format: "The hunt-er like ap-ple". The space is used to segment words, while the `-` is for syllagrams.
   
-  (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol for syllabifying them.
-  - For protein sequence, please segment its protein and domain.
+  (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
+  
+  - For protein sequence, please segment its protein and domain in the format: "A1-A2 B1-B2-B3". The space is used to segment proteins, while the `-` is for domain.
 
-2. If you don't have any segmented algorithm. 
+3. If you don't have any segmented algorithm. 
 
 3. 1. prepare
 
