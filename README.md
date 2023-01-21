@@ -65,8 +65,6 @@ Project is: _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 Room for improvement:
 - user defined function connection
 - segmentation algorithm for unknown languages or non-coding DNA
