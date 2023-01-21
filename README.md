@@ -40,20 +40,15 @@ or download the `evolution_mechanism.ipynb` to run on your computer.
   - For protein sequence, please go to the folder `genetics`.
   - For general sequence, please go to the folder `general`.
 2. Segment a sequence with its blocks and components. For details, please go to the corresponding folder.
-3. If you don't have any segmented algorithm. 
-
-3. 1. prepare
-
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+3. If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
 
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
 
 `write-your-code-here`
+![framework](./img/flowchart.png)
+
 
 
 ## Project Status
