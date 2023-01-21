@@ -28,22 +28,8 @@ The former is used to run case by case and see details of program, the beginner 
 
 ### Take Chinese for example:
 
-1. To complete the A-GLMV plot, you need excel table in the form of "**readme of Run_case_by_case.png**"
+1. Put your segmented corpora in "Chinese/data/Text"
 
-2. Put your segmented corpora in "Chinese/data/Text"
+2. Run "Chinese/Run_All.ipynb"
 
-3. Run "Chinese/Run_All.ipynb"
-
-4. Now you have all the information that can used to fill the excel table
-* M, V1, L can get from "Chinese/data/Statistical result"
-* SP can get form "Chinese/data/SP"
-* G can get form "Chinese/data/fitting"
-
-5. The "Accuracy" need to run "Chinese/Accuracy.ipynb"
-* Chose one of your segmented corpora as standard corpora (used to judge other algorithm, i.e., assume it is 100% correct)
-* Put the file in "Chinese/data/Statistical result" into "Chinese/Accuracy" folder and rename your standard corpora file as "standard"
-* Run "Chinese/Accuracy.ipynb", and you get the Accuracy data for your excel table
-
-6. After your excel table, you can run "A-GLMV plot/Run_case_by_case.ipynb"
-
-7. Now you get the A-GLMV plot !
+3. Now you have all the information
