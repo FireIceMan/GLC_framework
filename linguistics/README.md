@@ -28,8 +28,8 @@ The former is used to run case by case and see details of program, the beginner 
 
 ### Take Chinese for example:
 
-1. Put your segmented corpora in "Chinese/data/Text"
+1. Put your segmented corpora in `Chinese/data/Text`
 
-2. Run "Chinese/Run_All.ipynb"
+2. Run `Chinese/Run_All.ipynb`
 
 3. Now you have all the information
