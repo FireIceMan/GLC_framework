@@ -1,23 +1,19 @@
 # scaling analysis
+
+
+
+## Tutor
+### Prerequisit
+prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
+Encoding: utf-8
+
 - For human text, please segment its words and syllagrams. 
   
   (1) For phonogram, e.g. English, use the format: "The hunt-er like ap-ple". The space is used to segment words, while the `-` is for syllagrams.
   
   (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
 
-
-### Chinese/English
-Tool to study Chinese/English corpora
-### Cut-space
-Sometime your raw data has been segmented, Cut-space tool can help you recovery your data to un-segmented situation.
-
-Tutor
--------------------
-This tutor will teach you how to finish an A-GLMV plot.
-## Prerequisit
-prepare several segmented corpora (for the same novel, book, ...etc) with different algorithms
-Encoding: utf-8
-Some suggest algorithms:
+- If your text is not segmented, here are some suggest algorithms:
 
 1. Chinese:
 * CKIP, Sinica. https://pypi.org/project/ckip-segmenter/
@@ -27,11 +23,11 @@ Some suggest algorithms:
 2. English:
 * https://github.com/henchc/syllabipy
 
-### There are two version program: Case_by_case and Run_all
+### There are two version program: `Case_by_case.ipynb` and `Run_All.ipynb`
 
 The former is used to run case by case and see details of program, the beginner is suggested to use this program first.
 
-## Take Chinese for example:
+### Take Chinese for example:
 
 1. To complete the A-GLMV plot, you need excel table in the form of "**readme of Run_case_by_case.png**"
 
