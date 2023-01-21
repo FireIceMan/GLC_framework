@@ -5,9 +5,7 @@
   
   (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
 
-### A-GLMV plot
-A tool to plot A-GLMV relationship, where A is accuracy of a segmention algorithm and GLMV is our index.
-Now we have Chinese version
+
 ### Chinese/English
 Tool to study Chinese/English corpora
 ### Cut-space
