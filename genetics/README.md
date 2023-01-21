@@ -1,10 +1,6 @@
-A statistical tool to analyze the "scaling property" in English corpora
+A statistical tool to analyze the "scaling property" in protein sequence
+- For protein sequence, please segment its protein and domain in the format: "A1-A2 B1-B2-B3". The space is used to segment proteins, while the `-` is for domain.
 
-- For human text, please segment its words and syllagrams. 
-  
-  (1) For phonogram, e.g. English, use the format: "The hunt-er like ap-ple". The space is used to segment words, while the `-` is for syllagrams.
-  
-  (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
 
 
 ---------
