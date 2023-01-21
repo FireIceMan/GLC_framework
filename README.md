@@ -75,4 +75,4 @@ Room for improvement:
 
 
 ## Contact
-Created by [@FireIceMan](wang850308@gmail.com) - feel free to contact me!
+Created by [@FireIceMan](https://github.com/FireIceMan) - feel free to contact me!
