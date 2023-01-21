@@ -24,6 +24,8 @@
 
 (3) Tools that can be used to analyze text/protein sequence.
 
+- Technical details can be found in `SI.pdf`.
+
 ## Features
 List the ready features here:
 - Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
@@ -37,7 +39,7 @@ You can use the demo on google colab [_here_](https://colab.research.google.com/
 or download the `evolution_mechanism.ipynb` to run on your computer.
 
 ### For generating artificial text
-Go to the folder `./fake generator` and watch the readme.
+Watch the information at page 4 of `SI.pdf`, or go to the folder `./fake generator` and watch the readme.
 
 ### For analysis of protein sequence, language, and general sequence
 1. Choose the discipline:  
