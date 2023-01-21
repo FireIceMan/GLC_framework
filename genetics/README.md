@@ -3,7 +3,8 @@
 
 ## prerequisite
 - For protein sequence, please segment its protein and domain in the format: "A1-A2 B1-B2-B3". The space is used to segment proteins, while the `-` is for domain.
-- If you don't have suitable algorithm to segment, you can use InterPro which is mention in page 3 of `SI.pdf`
+- If you don't have suitable algorithm to segment, you can use InterPro which is mention in page 3 of `SI.pdf` (find this in GLC_framework
+/SI.pdf)
 
 
 ---------
