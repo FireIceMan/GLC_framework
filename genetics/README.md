@@ -1,5 +1,12 @@
 A statistical tool to analyze the "scaling property" in English corpora
 
+- For human text, please segment its words and syllagrams. 
+  
+  (1) For phonogram, e.g. English, use the format: "The hunt-er like ap-ple". The space is used to segment words, while the `-` is for syllagrams.
+  
+  (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
+
+
 ---------
 ## Fitting_MLE
 A teaching material of maximum likelihood estimation (MLE).
