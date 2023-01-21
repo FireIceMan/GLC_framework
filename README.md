@@ -1,5 +1,5 @@
 # GLC (Genetics-Linguistics Correspondence)
->Based on fundamental physical principle, this research can be applied to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and satisfying many statistical hallmarks of life and language, e.g., Zipf's law and power-law degree distribution.
+>Based on fundamental physical principle, this research builds a framework to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and examining the statistical hallmarks of life and language, e.g., Zipf's law and power-law degree distribution.
 
 ![framework](./img/Evo_Hierarchy.png)
 
@@ -26,25 +26,20 @@
 List the ready features here:
 - Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
 - Simulate mutation and predict the direction of evolution.
-- The evolution and variation is based on fundamental principle that can be explained, not a black-box.
+- The evolution and variation is based on fundamental principle that can be explained, not a $\text{\textcolor{red}{black-box}}$.
 - Reveal the hidden information of life and language by rank-rank analysis.
 
 ## Setup
 ### For algorithm of evolution and generating sequence
-You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y).
+You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y)
+or download the `evolution_mechanism.ipynb` to run on your computer.
 
-### For analysis of human text, protein sequence, and general sequence
-1. Prepare the .
-2. 
-3. Segmented a sequence with its units. 
-  - For human text, please segment its words and syllagrams. 
-  
-  (1) For phonogram, e.g. English, use the format: "The hunt-er like ap-ple". The space is used to segment words, while the `-` is for syllagrams.
-  
-  (2) For logogram, such as Chinese, use the format: "獵人 捕捉 獵物". The space is used to segment words, while no symbol is needed to syllabify them.
-  
-  - For protein sequence, please segment its protein and domain in the format: "A1-A2 B1-B2-B3". The space is used to segment proteins, while the `-` is for domain.
-
+### For analysis of language, protein sequence, and general sequence
+1. Choose the discipline:
+  - For language, please go to the folder `linguistics`.
+  - For protein sequence, please go to the folder `genetics`.
+  - For general sequence, please go to the folder `general`.
+2. Segment a sequence with its blocks and components. For details, please go to the corresponding folder.
 3. If you don't have any segmented algorithm. 
 
 3. 1. prepare
