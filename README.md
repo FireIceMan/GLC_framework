@@ -20,7 +20,9 @@
 
 (1) An evolutionary algorithm that can generate text/protein sequence; 
 
-(2) Tools that can be used to analyze text/protein sequence
+(2) Several fake generator that can generate artificial text;
+
+(3) Tools that can be used to analyze text/protein sequence.
 
 ## Features
 List the ready features here:
@@ -34,28 +36,27 @@ List the ready features here:
 You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y)
 or download the `evolution_mechanism.ipynb` to run on your computer.
 
-### For analysis of language, protein sequence, and general sequence
-1. Choose the discipline:
-  - For language, please go to the folder `linguistics`.
+### For analysis of protein sequence, language, and general sequence
+1. Choose the discipline:  
   - For protein sequence, please go to the folder `genetics`.
+  - For language, please go to the folder `linguistics`.
   - For general sequence, please go to the folder `general`.
 2. Segment a sequence with its blocks and components. For details, please go to the corresponding folder.
-   If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
+  - If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
 3. Use `Run_case_by_case.ipynb` or `Run_All.ipynb` to analyze your segmented sequence.
   - If you only want to analyze one text, use `Run_case_by_case.ipynb` while put the text in the same folder with `Run_case_by_case.ipynb`.
   - If you want to analyze many texts, use `Run_All.ipynb` while put the text in the folder `./data/Text`.
 
+### For generating artificial text
+Go to the folder `./fake generator` and watch the readme.
+
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-![framework](./img/flowchart.png)
-
+### 
+ The![framework](./img/flowchart.png)
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_ 
 
 
 ## Room for Improvement
