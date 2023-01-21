@@ -40,7 +40,10 @@ or download the `evolution_mechanism.ipynb` to run on your computer.
   - For protein sequence, please go to the folder `genetics`.
   - For general sequence, please go to the folder `general`.
 2. Segment a sequence with its blocks and components. For details, please go to the corresponding folder.
-3. If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
+   If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
+3. Use `Run_case_by_case.ipynb` or `Run_All.ipynb` to analyze your segmented sequence.
+  - If you only want to analyze one text, use `Run_case_by_case.ipynb` while put the text in the same folder with `Run_case_by_case.ipynb`.
+  - If you want to analyze many texts, use `Run_All.ipynb` while put the text in the folder `./data/Text`.
 
 ## Usage
 How does one go about using it?
