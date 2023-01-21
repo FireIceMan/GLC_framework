@@ -1,6 +1,5 @@
 # scaling analysis
-
-
+> Tools to analyze the statistical features for lanuages
 
 ## Tutor
 ### Prerequisit
@@ -25,7 +24,7 @@ Encoding: utf-8
 
 ### There are two version program: `Case_by_case.ipynb` and `Run_All.ipynb`
 
-The former is used to run case by case and see details of program, the beginner is suggested to use this program first.
+The former is used to run case by case and see details of program, the beginner is suggested to use this program.
 
 ### Take Chinese for example:
 
