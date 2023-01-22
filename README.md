@@ -75,7 +75,7 @@ Project is: _complete_
 
 
 ## Acknowledgements
-- This project was based on [arxiv]([https://www.example.com](https://arxiv.org/abs/2012.14309)).
+- This project was based on [arxiv](https://arxiv.org/abs/2012.14309).
 
 
 ## Contact
