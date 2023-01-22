@@ -15,7 +15,7 @@
 
 ## General Information
 - Main spirt - Life and language shared many similar hallmarks, thus they can be analyzed via a general framework.
-- Main Problem - The natural selection of sequence has not been quantified. In the other hands, the generating algorithm and prediction of sequence usually lack the $\text{\textcolor{red}{interpretability}}$. 
+- Main Problem - The natural selection of sequence has not been quantified. On the other hands, the generating algorithm and prediction of sequence usually lack the $\text{\textcolor{red}{interpretability}}$. 
 - This project provides 
 
 (1) An evolutionary algorithm that can generate text/protein sequence; 
@@ -39,7 +39,7 @@ You can use the demo on google colab [_here_](https://colab.research.google.com/
 or download the `evolution_mechanism.ipynb` to run on your computer.
 
 ### For generating artificial text
-Watch the information at page 4 of `SI.pdf`, or go to the folder `./fake generator` and watch the readme.
+Refer to the information at page 4 of `SI.pdf`, or the readme in the folder `./fake generator`.
 
 ### For analysis of protein sequence, language, and general sequence
 1. Choose the discipline:  
@@ -66,10 +66,12 @@ Use `Run_case_by_case.ipynb` or `Run_All.ipynb` to analyze your segmented sequen
 Project is: _complete_ 
 
 
-## Room for Improvement
-Room for improvement:
+## Possible future updates
+### For evolution algorithm
 - user defined function connection
+### For analysis tool
 - segmentation algorithm for unknown languages or non-coding DNA
+- analyze real data and automatically find out its corresponding parameters of evolution algorithm
 
 
 ## Acknowledgements
