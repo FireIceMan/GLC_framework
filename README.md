@@ -1,5 +1,5 @@
 # GLC (Genetics-Linguistics Correspondence)
->Based on fundamental physical principle, this research builds a framework to predict the evolution of sequence, such as protein sequence and human text, generating sequence, and examining the statistical hallmarks of life and language, e.g., Zipf's law and power-law degree distribution.
+>This research utilizes fundamental physical principles to construct a framework for predicting the evolution of sequences, including protein sequences and human language. The framework also generates new sequences and analyzes the statistical characteristics that are indicative of life and language, such as Zipf's law and power-law degree distribution.
 
 ![framework](./img/Evo_Hierarchy.png)
 
@@ -14,52 +14,55 @@
 * [Contact](#contact)
 
 ## General Information
-- Main spirt - Life and language shared many similar hallmarks, thus they can be analyzed via a general framework.
-- Main Problem - The natural selection of sequence has not been quantified. On the other hands, the generating algorithm and prediction of sequence usually lack the $\text{\textcolor{red}{interpretability}}$. 
+- Main spirt - Life and language share many common characteristics, making it possible to analyze them using a generalized framework.
+- Main Problem - The quantitative measurement of natural selection for sequences is an unresolved issue. Furthermore, existing algorithms for generating and forecasting sequences often lack transparency and $\text{\textcolor{red}{interpretability}}$. 
 - This project provides 
 
-(1) An evolutionary algorithm that can generate text/protein sequence; 
+(1) An evolutionary algorithm designed to generate text or protein sequences through simulating the process of natural selection.
 
-(2) Several fake generators that can generate artificial text;
+(2) Several fake generators capable of producing artificial text.
 
-(3) Tools that can be used to analyze text/protein sequence.
+(3) Tools for analyzing human text or protein sequences..
 
 - Technical details can be found in `SI.pdf`.
 
 ## Features
 List the ready features here:
-- Only need $\text{\textcolor{red}{4 parameters}}$ to generate a sequence that satisfies the statistical properties of human text and protein sequence.
-- Simulate mutation and predict the direction of evolution.
-- The evolution and variation is based on fundamental principle that can be explained, not a $\text{\textcolor{red}{black-box}}$.
-- Reveal the hidden information of life and language by rank-rank analysis.
+- Only requires $\text{\textcolor{red}{4 parameters}}$ to generate sequences that conform to the statistical properties of human text and protein sequences.
+- Capable of simulating mutation and forecasting evolutionary changes.
+- Evolution and variation are based on fundamental principles that can be explained, not a $\text{\textcolor{red}{black-box}}$ mechanism.
+- Rank-rank analysis allows for the uncovering of previously hidden information about life and language.
 
 ## Setup
+1. Install Anaconda with Python 3
+2. Environment: ipynb files can be excuted on Jupyter notebook. 
+
 ### For algorithm of evolution and generating sequence
 You can use the demo on google colab [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y)
-or download the `evolution_mechanism.ipynb` to run on your computer.
+or access `evolution_mechanism.ipynb` and run it on your local computer using appropriate software such as $\text{\textcolor{red}{Jupyter notebook}}$.
 
 ### For generating artificial text
 Refer to the information at page 4 of `SI.pdf`, or the readme in the folder `./fake generator`.
 
 ### For analysis of protein sequence, language, and general sequence
-1. Choose the discipline:  
-  - For protein sequence, please go to the folder `genetics`.
-  - For language, please go to the folder `linguistics`.
-  - For general sequence, please go to the folder `general`.
-2. Segment a sequence with its blocks and components. For details, please go to the corresponding folder.
-  - If you don't have any segmentation algorithm, please go to the corresponding folder and read the recommend softwares.
+1. Select the appropriate discipline:  
+  - For analyzing protein sequences, navigate to the `genetics` folder.
+  - For analyzing language, navigate to the `linguistics` folder.
+  - For analyzing general sequences, navigate to the `general` folder.
+2. Break down the sequence into its constituent blocks and components using a segmentation algorithm. For further instructions, refer to the corresponding folder.
+  - If you do not have a segmentation algorithm, refer to the recommended software in the corresponding folder.
 
 ## Usage
 ### The algorithm of evolution
 ![flowchart of the algorithm of evolution](./img/flowchart.png)
-1. Set the parameters: `L`, `N_max`, `P_N`, `lam`, `z`, `P_mu`, and `T`. The deciding parameters are (`lam`, `z`, `P_mu`, `T`).
-2. Excute the program, you will receive a txt file.
-3. Put the txt file into the folder `general` and excute `Run_case_by_case.ipynb`, you will obtain the result of analysis.
+1. Configure the parameters: `L`, `N_max`, `P_N`, `lam`, `z`, `P_mu`, and `T`. The crucial parameters are (`lam`, `z`, `P_mu`, `T`).
+2. Run the program, it will output a txt file.
+3. Move the txt file to the `general` folder and execute the `Run_case_by_case.ipynb` file, it will provide the analysis results.
 
 ### The analysis tool
-Use `Run_case_by_case.ipynb` or `Run_All.ipynb` to analyze your segmented sequence.
-- If you only want to analyze one text, use `Run_case_by_case.ipynb` while put the text in the same folder with `Run_case_by_case.ipynb`.
-- If you want to analyze many texts, use `Run_All.ipynb` while put the text in the folder `./data/Text`.
+Use either `Run_case_by_case.ipynb` or `Run_All.ipynb` to analyze your segmented sequence:
+- If you wish to analyze a single text, utilize `Run_case_by_case.ipynb` and place the text in the same directory as the `Run_case_by_case.ipynb`.
+- If you aim to analyze multiple texts, use `Run_All.ipynb` and place the texts in the `./data/Text` directory.
 
 
 ## Project Status
@@ -68,10 +71,10 @@ Project is: _complete_
 
 ## Possible future updates
 ### For evolution algorithm
-- user defined function connection
+- Allow for user-defined function connection network (current version: random FC)
 ### For analysis tool
-- segmentation algorithm for unknown languages or non-coding DNA
-- analyze real data and automatically find out its corresponding parameters of evolution algorithm
+- Develop segmentation algorithms for unknown languages or non-coding DNA
+- Implement the ability to automatically determine the corresponding parameters for the evolution algorithm when analyzing real-world data.
 
 
 ## Acknowledgements
