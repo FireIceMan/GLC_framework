@@ -9,7 +9,7 @@
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
+* [Possible future updates](#possible-future-updates)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
