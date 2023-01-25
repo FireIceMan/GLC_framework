@@ -1,5 +1,6 @@
 # GLC (Genetics-Linguistics Correspondence)
-[arxiv](https://arxiv.org/abs/2012.14309)
+article on [arxiv](https://arxiv.org/abs/2012.14309); 
+evolution algorithm on [_here_](https://colab.research.google.com/drive/1h8tNyqPPnqfmG9g7BiD-w4jzSz-npnJa#scrollTo=lwZnojnDFM5Y)
 >This research utilizes fundamental physical principles to construct a framework for predicting the evolution of sequences, including protein sequences and human language. The framework also generates new sequences and analyzes the statistical characteristics that are indicative of life and language, such as Zipf's law and power-law degree distribution.
 
 ![framework](./img/Evo_Hierarchy.png)
