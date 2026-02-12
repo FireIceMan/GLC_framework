@@ -91,44 +91,44 @@ def transfrom_proteinlist_into_domlist(protein_list):
     return dom_list
 
 
-def produce_data_frame(unit_list, unit_freq, unit_seq, varibleTitle):
+def produce_data_frame(unit_list, unit_freq, unit_seq, variableTitle):
     '''produce pandas dataframe
-    
+
     ---Input
-    unit denotes protein or domain 
-    
+    unit denotes protein or domain
+
     1. unit_list: list
         return of read_file() or transfrom_proteinlist_into_domlist()
-    
+
     2. unit_freq: set
         return of count_frequency()
-    
+
     3. unit_seq: set
         return of decide_seq_order()
-    
+
     ---Parameters
-        varibleTitle: string
+        variableTitle: string
             the title name of column in dataframe
-    
+
     ---Return
         dataframe: pandas.DataFrame
             a dataframe contains unit_list, unit_freq, and unit_seq
     '''
-    
-    
+
+
     unit_list = list(set(unit_list))
     data = {}
     unit_seq_list = []
     unit_freq_list = []
-    
+
     for unit in unit_list:
         unit_freq_list.append(unit_freq[unit])
         unit_seq_list.append(unit_seq[unit])
-    
-    first = varibleTitle 
-    second = varibleTitle + "SeqOrder"
-    third = varibleTitle + "Freq"
-    forth = varibleTitle + "Rank"
+
+    first = variableTitle
+    second = variableTitle + "SeqOrder"
+    third = variableTitle + "Freq"
+    forth = variableTitle + "Rank"
     
     data[first] = unit_list
     data[second] = unit_seq_list
