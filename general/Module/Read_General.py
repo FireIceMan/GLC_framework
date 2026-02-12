@@ -110,14 +110,17 @@ def read_Ngram_file(filename, N, encode = 'UTF-8'):
                     
     if '\ufeff' in block_list:
         block_list.remove('\ufeff')
-    
+
+    # Backup original block list before processing N-grams
+    original_blocks = block_list
+    # Clear list to rebuild with N-gram format
     block_list = []
-    for block in block_list:
+    for block in original_blocks:
         components = textwrap.wrap(block, N)
         New_block = ''
         for s in components:
             New_block = New_block + '-' + s
-            block_list.append(New_block)
+        block_list.append(New_block)
     
     print("read file successfully!")
     return block_list, N

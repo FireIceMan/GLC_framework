@@ -110,14 +110,17 @@ def read_Ngram_file(filename, N, encode = 'UTF-8'):
                     
     if '\ufeff' in word_list:
         word_list.remove('\ufeff')
-    
+
+    # Backup original word list before processing N-grams
+    original_words = word_list
+    # Clear list to rebuild with N-gram format
     word_list = []
-    for word in word_list:
+    for word in original_words:
         syllagrams = textwrap.wrap(word, N)
         New_word = ''
         for s in syllagrams:
             New_word = New_word + '-' + s
-            word_list.append(New_word)
+        word_list.append(New_word)
     
     print("read file successfully!")
     return word_list, N

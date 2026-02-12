@@ -91,44 +91,44 @@ def transfrom_blocklist_into_compolist(block_list):
     return compo_list
 
 
-def produce_data_frame(unit_list, unit_freq, unit_seq, varibleTitle):
+def produce_data_frame(unit_list, unit_freq, unit_seq, variableTitle):
     '''produce pandas dataframe
-    
+
     ---Input
-    unit denotes block or component 
-    
+    unit denotes block or component
+
     1. unit_list: list
         return of read_file() or transfrom_blocklist_into_compolist()
-    
+
     2. unit_freq: set
         return of count_frequency()
-    
+
     3. unit_seq: set
         return of decide_seq_order()
-    
+
     ---Parameters
-        varibleTitle: string
+        variableTitle: string
             the title name of column in dataframe
-    
+
     ---Return
         dataframe: pandas.DataFrame
             a dataframe contains unit_list, unit_freq, and unit_seq
     '''
-    
-    
+
+
     unit_list = list(set(unit_list))
     data = {}
     unit_seq_list = []
     unit_freq_list = []
-    
+
     for unit in unit_list:
         unit_freq_list.append(unit_freq[unit])
         unit_seq_list.append(unit_seq[unit])
-    
-    first = varibleTitle 
-    second = varibleTitle + "SeqOrder"
-    third = varibleTitle + "Freq"
-    forth = varibleTitle + "Rank"
+
+    first = variableTitle
+    second = variableTitle + "SeqOrder"
+    third = variableTitle + "Freq"
+    forth = variableTitle + "Rank"
     
     data[first] = unit_list
     data[second] = unit_seq_list
@@ -392,12 +392,13 @@ def draw_RRD_plot(big, block, compo, longest, name, V, H, need_line = 'Y', numbe
     plt.gcf().subplots_adjust(left = 0.17, bottom = 0.17)
     try:
         if Path == '':
-            fig.savefig('RRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT) 
+            fig.savefig('RRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.show()
         else:
-            fig.savefig(Path + 'RRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT) 
+            fig.savefig(Path + 'RRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return coordinate
     
@@ -481,7 +482,8 @@ def N_compo_dist(name, big, longest, density = True, FORMAT = 'png', Path = ''):
         else:
             fig.savefig(Path + 'N-compo of ' + name + '.' + FORMAT, dpi = 300, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
         
     if density == True:
@@ -574,7 +576,7 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
         plt.xlabel('$n$ for $H_{n+1}/H_{n}$', size = 20)
         plt.ylabel('$r_H$', size = 20)
         plt.ylim([0, max(r) + 0.1])
-        plt.plot(r_position, r, 'ro')        
+        plt.plot(r_position, r, 'ro')
         try:
             if Path == '':
                 fig.savefig('H of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
@@ -582,7 +584,8 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
             else:
                 fig.savefig(Path + 'H of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
                 plt.close()
-        except:
+        except (OSError, IOError, ValueError) as e:
+            print(f"Warning: Could not save figure - {e}")
             plt.show()
         return MEAN, STD, SHIFT
     elif x == 'V':
@@ -633,7 +636,7 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
         plt.xlabel('$m$ for $V_{m+1}/V_{m}$', size = 20)
         plt.ylabel('$r_V$', size = 20)
         plt.ylim([0, max(r) + 0.1])
-        plt.plot(r_position, r, 'ro')        
+        plt.plot(r_position, r, 'ro')
         try:
             if Path == '':
                 fig.savefig('V of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
@@ -641,7 +644,8 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
             else:
                 fig.savefig(Path + 'V of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
                 plt.close()
-        except:
+        except (OSError, IOError, ValueError) as e:
+            print(f"Warning: Could not save figure - {e}")
             plt.show()
         return MEAN, STD, SHIFT
     else:
@@ -783,7 +787,8 @@ def FRD_plot(name, block, compo, x_pos = 2, y_pos = 10, FORMAT = 'png', Path = '
         else:
             fig.savefig(Path + 'FRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return FRD_block
 

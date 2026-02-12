@@ -83,20 +83,20 @@ def transfrom_wordlist_into_charlist(word_list):
         
     return char_list
 
-def produce_data_frame(word_list, word_freq, word_seq,varibleTitle ):
+def produce_data_frame(word_list, word_freq, word_seq, variableTitle):
     word_list = list(set(word_list))
     data = {}
     word_seq_list = []
     word_freq_list = []
-    
+
     for word in word_list:
         word_freq_list.append(word_freq[word])
         word_seq_list.append(word_seq[word])
-    
-    first = varibleTitle 
-    second = varibleTitle + "SeqOrder"
-    third = varibleTitle + "Freq"
-    forth = varibleTitle + "Rank"
+
+    first = variableTitle
+    second = variableTitle + "SeqOrder"
+    third = variableTitle + "Freq"
+    forth = variableTitle + "Rank"
     
     data[first] = word_list
     data[second] = word_seq_list
