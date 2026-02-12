@@ -247,7 +247,7 @@ def sep_point(m, n, points):
             py.append(j[1])
     return px, py
 
-def Tv(r, p):
+def Tv(r, p, D_0=50, Lambda=1):
     '''See Eq. (24, 25, 26) in SI.
     
     ---Input
@@ -256,9 +256,17 @@ def Tv(r, p):
     
     2. p: ndarray
         data with noise, where p = [x1, x2, ..., xn, y1, y2, ..., yn]
-    
+
+    ---Parameters
+    1. D_0: float, default = 50
+        Penalty threshold for outlier robustness.
+        Values with deviation <= D_0 use squared penalty; larger deviations use linear penalty.
+
+    2. Lambda: float, default = 1
+        Regularization parameter controlling the smoothness vs data fidelity trade-off.
+
     ---Return
-        a function used to denoise
+        Total variation energy (float) used for denoising optimization
     '''
     def penalty(D, D_0):
         #This penalty function is used to lower the influence of outliers
@@ -268,16 +276,17 @@ def Tv(r, p):
         elif abs(D) > D_0:
             return D_0 * (2 * abs(D) - D_0)
     t = 0
-    D_0 = 50
+
     for i in range(len(p)):
         t = t + penalty(r[i] - p[i], D_0)
     
     #see taxicab distance
-    Lambda = 1 #regularziation parameters
+
+    
     rl = int(len(r)/2)
     return sum(np.square(r[1 : rl] - r[:rl - 1])) + sum(np.square(r[rl + 1:] - r[rl:-1])) + Lambda * t
 
-def DENOISE(m, n, V, H, points, toler = 50, num_section = 2, delta = 0.15, percent = 0.05):
+def DENOISE(m, n, V, H, points, toler = 50, num_section = 2, delta = 0.15, percent = 0.05, D_0 = 50, Lambda = 1):
     '''chose left_upper part in each rectangle and denoise them via Tv.
     
     ---Input
@@ -311,7 +320,13 @@ def DENOISE(m, n, V, H, points, toler = 50, num_section = 2, delta = 0.15, perce
     4. percent: float
         affect the tolerance of left_upper()
         see left_upper() > inner functions > local_con for explaination
-    
+
+    5. D_0: float, default = 50
+        Penalty threshold for outlier robustness in total variation regularization.
+
+    6. Lambda: float, default = 1
+        Regularization parameter for total variation denoising.
+
     ---Return
     1. luptx: 1D array
         array of x coordinate for (m,n)~(m+5,n+5) after denoising
@@ -323,7 +338,7 @@ def DENOISE(m, n, V, H, points, toler = 50, num_section = 2, delta = 0.15, perce
     lup = left_upper(m, n, V, H, points, num_section, delta, percent)
     lupx, lupy = sep_point(m, n, lup)
     lupxy = np.array(lupx + lupy)  #lupxy = [x1, x2, ..., xn, y1, y2, ..., yn]
-    RR = minimize(Tv, lupxy, args = lupxy, method='CG', tol = toler)
+    RR = minimize(Tv, lupxy, args = (lupxy, D_0, Lambda), method='CG', tol = toler)
     luptx = RR.x[:int(len(RR.x)/2)]
     lupty = RR.x[int(len(RR.x)/2):]
     return luptx, lupty
@@ -599,7 +614,8 @@ def rg(name, g, FORMAT, Path = ''):
         else:
             fig.savefig(Path + 'rg of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return Rg
 
@@ -758,7 +774,8 @@ def scaling_fit(data, Rg_0, V, H, Zipf, name, FORMAT = 'pdf', Path = ''):
         else:
             fig.savefig(Path + 'fitting ' + name + '.' + FORMAT, dpi = 300, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
         
     fit_para_best = {}

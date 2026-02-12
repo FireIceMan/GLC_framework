@@ -397,7 +397,8 @@ def draw_RRD_plot(big, word, syl, longest, name, V, H, need_line = 'Y', number_o
         else:
             fig.savefig(Path + 'RRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT) 
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return coordinate
     
@@ -473,7 +474,8 @@ def N_syl_dist(name, big, longest, density = True, FORMAT = 'png', Path = ''):
         else:
             fig.savefig(Path + 'N-syl of ' + name + '.' + FORMAT, dpi = 300, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
 
 def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png', Path = ''):
@@ -569,8 +571,9 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
             else:
                 fig.savefig(Path + 'H of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
                 plt.close()
-        except:
-            plt.show()
+        except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
+        plt.show()
         return MEAN, STD, SHIFT
     elif x == 'V':
         if len(V) < max_range + 4:
@@ -628,8 +631,9 @@ def which_plot(name, V, H, x = 'H', max_range = 50, shift = 'N', FORMAT = 'png',
             else:
                 fig.savefig(Path + 'V of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
                 plt.close()
-        except:
-            plt.show()
+        except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
+        plt.show()
         return MEAN, STD, SHIFT
     else:
         print('please chose x = \'H\' or \'V\'')
@@ -770,7 +774,8 @@ def FRD_plot(name, word, syl, x_pos = 2, y_pos = 10, FORMAT = 'png', Path = ''):
         else:
             fig.savefig(Path + 'FRD of ' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return FRD_word
 

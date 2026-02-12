@@ -122,7 +122,8 @@ def Allo_plot(name, syl, x_pos = 0, y_pos = 0, FORMAT = 'png', Path = ''):
         else:
             fig.savefig(Path + 'allocation_' + name + '.' + FORMAT, dpi = 500, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     
     Allo_fit = (A, B)
@@ -240,7 +241,8 @@ def Chain_plot(name, word, x_pos = 0, y_pos = 0, FORMAT = 'png', Path = ''):
         else:
             fig.savefig(Path + 'chain_' + name + '.' + FORMAT, dpi = 500, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     
     Chain_fit = (A, B)

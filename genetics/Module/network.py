@@ -145,7 +145,8 @@ def plot_cluster_block(name, cluster_block, FORMAT = 'pdf', Path = ''):
         else:
             fig.savefig(Path + 'cluster_block_' + name + '.' + FORMAT, dpi=400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
         
 def plot_cluster_compo(name, cluster_compo, FORMAT = 'pdf', Path = ''):
@@ -194,7 +195,8 @@ def plot_cluster_compo(name, cluster_compo, FORMAT = 'pdf', Path = ''):
         else:
             fig.savefig(Path + 'cluster_compo_' + name + '.' + FORMAT, dpi=400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
 
 def plot_degree_block(name, block_degree_sequence, FORMAT = 'pdf', Path = ''):
@@ -230,7 +232,8 @@ def plot_degree_block(name, block_degree_sequence, FORMAT = 'pdf', Path = ''):
         else:
             fig.savefig(Path + 'degree_block_' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
 
 def plot_degree_compo(name, compo_degree_sequence, FORMAT = 'pdf', Path = ''):
@@ -366,7 +369,8 @@ def plot_degree_compo(name, compo_degree_sequence, FORMAT = 'pdf', Path = ''):
         else:
             fig.savefig(Path + 'degree_compo_' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     return degree_component
         
@@ -419,6 +423,7 @@ def plot_shortest_path(name, sum_shorest_path, G_name, FORMAT = 'pdf', Path = ''
         else:
             fig.savefig(Path + 'path_' + G_name + '_' + name + '.' + FORMAT, dpi = 400, format = FORMAT)
             plt.close()
-    except:
+    except (OSError, IOError, ValueError) as e:
+        print(f"Warning: Could not save figure - {e}")
         plt.show()
     print('exclude zero path, the avg_path is', avg_spL)
